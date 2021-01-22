@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import AppResumeTitle from '@/components/AppResumeTitle'
-import AppResumeSubtitle from '@/components/AppResumeSubtitle'
-import AppResumeAvatar from '@/components/AppResumeAvatar'
-import AppResumeText from '@/components/AppResumeText'
+import ResumeTitle from '@/components/ResumeTitle'
+import ResumeSubtitle from '@/components/ResumeSubtitle'
+import ResumeAvatar from '@/components/ResumeAvatar'
+import ResumeText from '@/components/ResumeText'
 export default {
   props: {
     resumeContent: {
@@ -27,17 +27,17 @@ export default {
   },
   methods: {
     componentName (name) {
-      if (name.toLowerCase() === 'заголовок') return 'app-resume-title'
-      if (name.toLowerCase() === 'подзаголовок') return 'app-resume-subtitle'
-      if (name.toLowerCase() === 'аватар') return 'app-resume-avatar'
-      if (name.toLowerCase() === 'текст') return 'app-resume-text'
+      if (name.toLowerCase() === 'заголовок') return 'resume-title'
+      if (name.toLowerCase() === 'подзаголовок') return 'resume-subtitle'
+      if (name.toLowerCase() === 'аватар') return 'resume-avatar'
+      if (name.toLowerCase() === 'текст') return 'resume-text'
     }
   },
   components: {
-    AppResumeTitle,
-    AppResumeSubtitle,
-    AppResumeAvatar,
-    AppResumeText
+    ResumeTitle,
+    ResumeSubtitle,
+    ResumeAvatar,
+    ResumeText
   }
 }
 </script>
